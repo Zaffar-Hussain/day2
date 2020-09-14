@@ -1,0 +1,34 @@
+<div class="header2"><h2>Day2</h2></div>
+<div class="dataBinding">
+    <h1>Two types of Data Binding : Interpollation and Property binding</h1>
+    <ul>
+        <li>Interpolation refers to embedding expressions into marked up text. By default, interpolation 
+            uses as its delimiter the double curly braces,.</li>
+        <li>In the property binding, a template expression appears in quotes to the right of the = symbol 
+            as in .</li>
+    </ul>
+    <h3>Data Binding Examples</h3>
+    <table border="2px solid black">
+        <tr>
+            <th colspan="3">data was binded using interpollation. check the code to know the data binding via interpollation</th>
+        </tr>
+        <tr>
+            <th colspan="3">Employee Details</th>
+        </tr>
+        <tr>
+            <td>name</td><td>Post</td><td>Location</td>
+        </tr>
+        <tr>
+            <td>{{empDetails[0].name}}</td><td>{{empDetails[0].post}}</td><td>{{empDetails[0].location}}</td>
+        </tr>
+        <tr>
+            <td>{{empDetails[1].name}}</td><td>{{empDetails[1].post}}</td><td>{{empDetails[1].location}}</td>
+        </tr>
+    </table>
+</div>
+
+
+<div style="background-color: black;color: white;">
+    <h2>The below image is inserted using property binding check the code to understand</h2>
+    <img [src]="compLogo" />
+</div>
